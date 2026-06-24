@@ -1989,3 +1989,50 @@ width:100%;
     text-align:center;
     line-height:1.8;
 }
+.hero-image{
+    position:relative;
+    width:350px;
+    height:350px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero-image img{
+    width:260px;
+    height:260px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid #00ffff;
+    z-index:2;
+    box-shadow:
+    0 0 30px cyan,
+    0 0 60px cyan,
+    0 0 120px cyan;
+}
+
+.image-ring{
+    position:absolute;
+    width:320px;
+    height:320px;
+    border:2px solid cyan;
+    border-radius:50%;
+    animation:spin 10s linear infinite;
+}
+
+.ring2{
+    width:360px;
+    height:360px;
+    animation-direction:reverse;
+}
+
+.ring3{
+    width:400px;
+    height:400px;
+    opacity:.4;
+}
+
+@keyframes spin{
+    from{transform:rotate(0deg);}
+    to{transform:rotate(360deg);}
+}
